@@ -1,0 +1,29 @@
+1-- Create Project :
+    composer create-project symfony/website-skeleton CentreMedical
+
+2-- Creer la base de donnée:
+    symfony console doctrine:database:create
+
+3-- Supprimer la base de donnée:
+    symfony console doctrine:database:drop --force
+
+4-- Creer ou modifier une Entite (table):
+    symfony console make:entity
+
+5-- Creer l'entite User:
+    symfony console make:User
+
+6-- make migration:
+    symfony console make:migration
+
+7-- make migrate:
+    symfony console doctrine:migration:migrate
+
+8-- runserver:
+    symfony server:start
+    
+9-- stopserver:
+    symfony server:stop
+
+10-- create a controller:
+    symfony console make:controller NameController

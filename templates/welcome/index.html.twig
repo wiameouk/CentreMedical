@@ -1,0 +1,527 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'acceuil{% endblock %}
+
+{% block body %}
+    
+
+
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <h1 class="text-white text-center">Bienvenue au Centre Médical AlWiame</h1>
+
+                            <h6 class="text-center">Nous sommes dédiés à votre santé et votre bien-être. Notre équipe de professionnels de la santé est là pour vous offrir les meilleurs soins médicaux.</h6>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="featured-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block bg-white shadow-lg">
+                                <a href="topics-detail.html">
+                                    <div class="d-flex">
+                                        <div>
+                                            <h5 class="mb-2">Votre Santé, Notre Priorité</h5>
+                                            <p class="mb-0">Chez Centre Médical Al Wiame, votre santé est au cœur de nos préoccupations. Nous nous engageons à offrir des soins médicaux de haute qualité et un service personnalisé pour répondre à tous vos besoins de santé.</p>
+                                        </div>
+                                    </div>
+
+                                    <img src="{{asset('images/priority.png')}}" class="custom-block-image img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-block custom-block-overlay">
+                                <div class="d-flex flex-column h-100">
+                                    <img src="{{asset('images/rdv.jpg')}}" class="custom-block-image img-fluid" alt="">
+
+                                    <div class="custom-block-overlay-text d-flex">
+                                        <div>
+                                            <h5 class="text-white mb-2">Bien-Être à chaque Rendez-vous</h5>
+
+                                            <p class="text-white">À Centre Médical Al Wiame, nous croyons que chaque rendez-vous médical devrait être une expérience de bien-être. Notre équipe dévouée est là pour vous accompagner à chaque étape de votre parcours vers la santé optimale.</p>
+
+                                            <a href="{{path('welcome.contact')}}" class="btn custom-btn mt-2 mt-lg-3">Prendre un rendez-vous dés maintenant</a>
+                                        </div>
+
+                                    </div>
+
+                                    
+
+                                    <div class="section-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="explore-section section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <h2 class="mb-4">Services</h1>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane" type="button" role="tab" aria-controls="design-tab-pane" aria-selected="true"> Médecine Interne</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane" type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">Chirurgie</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane" type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Pédiatrie</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane" type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">Neurologie</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane" type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Gynécologie et Obstétrique</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Cardiologie</h5>
+
+                                                            <p class="mb-0">Les cardiologues se spécialisent dans le diagnostic et le traitement des problèmes cardiaques et vasculaires.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/cardio.jpeg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Gastro-entérologie </h5>
+
+                                                                <p class="mb-0">Les gastro-entérologues traitent les troubles digestifs, les maladies du foie et les problèmes intestinaux.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/gastro.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Endocrinologie</h5>
+
+                                                                <p class="mb-0">Les endocrinologues se concentrent sur les troubles hormonaux et métaboliques.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/endo.webp')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">Chirurgie Générale</h5>
+
+                                                                <p class="mb-0">Les chirurgiens généraux réalisent une variété d'interventions chirurgicales, notamment des opérations abdominales et thoraciques.</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <img src="{{asset('images/chirugie.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">Orthopédie </h5>
+
+                                                                <p class="mb-0">Les orthopédistes traitent les problèmes musculo-squelettiques, notamment les fractures et les problèmes articulaires.r</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <img src="{{asset('images/ortho.jpeg')}}" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-12">
+                                                <div class="custom-block bg-white shadow-lg">
+                                                    <a href="#">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <h5 class="mb-2">Chirurgie de la Main</h5>
+
+                                                                <p class="mb-0">Les chirurgiens de la main se concentrent sur les problèmes de la main, du poignet et des doigts.</p>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <img src="{{asset('images/la main.webp')}}" class="custom-block-image img-fluid" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+
+                                <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab" tabindex="0">   <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Pédiatre Général </h5>
+
+                                                            <p class="mb-0">Les pédiatres généraux fournissent des soins de santé aux enfants, des nourrissons aux adolescents.
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/pediatre.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="custom-block custom-block-overlay">
+                                                <div class="d-flex flex-column h-100">
+                                                    <img src="{{asset('gastroped.jpg')}}" class="custom-block-image img-fluid" alt="">
+
+                                                    <div class="custom-block-overlay-text d-flex">
+                                                        <div>
+                                                            <h5 class="text-white mb-2">Pédiatre Gastro-entérologue </h5>
+
+                                                            <p class="text-white"> Les pédiatres gastro-entérologues se spécialisent dans les troubles digestifs chez les enfants.</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="section-overlay"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Neurologue</h5>
+
+                                                            <p class="mb-0">Les neurologues diagnostiquent et traitent les troubles neurologiques, tels que les migraines et les maladies neurodégénératives comme la maladie de Parkinson.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/neuro.webp')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Neurochirurgie</h5>
+
+                                                            <p class="mb-0">Les neurochirurgiens réalisent des interventions chirurgicales sur le cerveau, la moelle épinière et les nerfs.</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <img src="{{asset('images/neurochi.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Neuropsychologie</h5>
+
+                                                            <p class="mb-0">Les neuropsychologues évaluent les fonctions cognitives et émotionnelles du cerveau.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/neurenf.jpeg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Gynécologue</h5>
+
+                                                            <p class="mb-0"> Les gynécologues se concentrent sur les soins de santé des femmes, notamment la santé reproductive et les problèmes gynécologiques.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/gyneco.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="custom-block bg-white shadow-lg">
+                                                <a href="#">
+                                                    <div class="d-flex">
+                                                        <div>
+                                                            <h5 class="mb-2">Gynécologie Oncologique</h5>
+
+                                                            <p class="mb-0">Les gynécologues oncologiques se spécialisent dans le diagnostic et le traitement des cancers gynécologiques.</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <img src="{{asset('images/gynecior.jpg')}}" class="custom-block-image img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="timeline-section section-padding" id="section_3">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="text-white mb-4">Comment Prendre un Rendez-vous</h1>
+                        </div>
+
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="timeline-container">
+                                <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                    <div class="list-progress">
+                                        <div class="inner"></div>
+                                    </div>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Accéder à la Page de Contact</h4>
+
+                                        <p class="text-white">"Pour prendre un rendez-vous, la première étape consiste à accéder à notre page de contact. Vous pouvez le faire en naviguant vers la section 'Contact' de notre site web.</p>
+
+                                        <div class="icon-holder">
+                                          <i class="bi-search"></i>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <h4 class="text-white mb-3"> Remplir les Informations Requises</h4>
+
+                                        <p class="text-white">Une fois sur la page de contact, remplissez les informations nécessaires dans le formulaire de rendez-vous. Assurez-vous de fournir des détails précis pour que nous puissions mieux répondre à vos besoins médicaux.</p>
+
+                                        <div class="icon-holder">
+                                          <i class="bi-bookmark"></i>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <h4 class="text-white mb-3">Attente de notre Appel</h4>
+
+                                        <p class="text-white">Après avoir soumis le formulaire, l'une de nos secrétaires ou infirmières dédiées examinera votre demande. Nous vous contacterons rapidement pour confirmer la date et l'heure de votre rendez-vous.</p>
+
+                                        <div class="icon-holder">
+                                          <i class="bi-book"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center mt-5">
+                            <p class="text-white">
+                                Prendre un rendez-vous ?
+                                <a href="{{path('welcome.contact')}}" class="btn custom-btn custom-border-btn ms-3">Click sur le button</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="faq-section section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Questions fréquemment posées</h2>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-5 col-12">
+                            <img src="{{asset('images/faq_graphic.jpg')}}" class="img-fluid" alt="FAQs">
+                        </div>
+
+                        <div class="col-lg-6 col-12 m-auto">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Quels sont les services offerts par le Centre Médical Al Wiame ?
+                                        </button>
+                                    </h2>
+
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Notre centre médical offre une gamme complète de services de soins de santé, y compris la médecine interne, la chirurgie, la pédiatrie, la gynécologie, la neurologie, et bien plus encore. Nous sommes là pour répondre à tous vos besoins médicaux.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Quels sont les horaires d'ouverture du centre médical ?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Notre centre médical est ouvert du lundi au vendredi de [heures d'ouverture]. Nous offrons également des services d'urgence le week-end et les jours fériés. Consultez notre page "Horaires" pour plus de détails.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Comment puis-je obtenir des informations sur les coûts des services médicaux ?
+                                    </button>
+                                    </h2>
+
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Vous pouvez obtenir des informations sur les coûts des services médicaux en nous contactant directement. Notre équipe administrative se fera un plaisir de vous fournir des détails sur les tarifs et les options de paiement.
+                                            Ces questions fréquemment posées aideront vos patients à obtenir des informations essentielles sur votre centre médical et à résoudre les questions courantes qu'ils pourraient avoir. Vous pouvez également ajouter d'autres questions spécifiques en fonction des besoins de votre public.. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-section section-padding section-bg" id="section_5">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-5">Notre adresse</h2>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3336.2402018133134!2d-7.586735524601335!3d33.26020335913689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda63ce42ae31ac9%3A0x92b8ae5d96974146!2sH%C3%B4pital%20Local%20de%20Berrechid!5e0!3m2!1sfr!2sma!4v1695243301703!5m2!1sfr!2sma" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                            <h4 class="mb-3">Bureau</h4>
+
+                            <p>Al Wiame, Berrchid</p>
+
+                            <hr>
+
+                            <p class="d-flex align-items-center mb-1">
+                                <span class="me-2">Phone</span>
+
+                                <a href="tel: 0671858825" class="site-footer-link">
+                                    0671858825
+                                </a>
+                            </p>
+
+                            <p class="d-flex align-items-center">
+                                <span class="me-2">Email</span>
+
+                                <a href="mailto:wiam@gmail.com" class="site-footer-link">
+                                    wiam@gamil.com
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+ 
+
+{% endblock %}
